@@ -1,0 +1,60 @@
+
+#cabecalho, #opcao, #iniciar, #jog1, #jog2, #content, #tab{
+    text-align: center;
+}
+
+#menu ul{
+    margin: 0;
+    background-color: #3385ff;
+    list-style: none;
+   }
+
+ #menu ul li{
+     display: inline;
+  }
+
+ #menu ul li a{
+     padding: 20px 20px;
+     color: white;
+     text-decoration: none;
+   }
+
+  #menu ul li a:hover{
+     color:red;
+   }
+
+
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer {	   
+    display: block;
+    background-color:black;
+    color:white;
+    text-align: center;
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top:5px;
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    left:0px; 
+    
+}
+#result{
+    visibility:hidden;
+    text-align: center;
+}
+
+.pt{
+width:35px;  
+}
+
+#painel{
+    text-align: center; 
+}

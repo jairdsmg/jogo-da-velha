@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Jogo da Velha</title>
+       <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">-->
+       <link rel = "stylesheet" type = "text/css" href = "jogo_da_velha.css" />
+   </head>
+
+
+   <body class="w3-theme-l4" id="body">
+
+    <div id="conteudo" class="w3-container w3-card w3-white w3-round w3-margin w3-modal-content w3-display-topmiddle"><br>
+   
+            <div id = "cabecalho">
+               <h1>Jogo da Velha</h1>
+            </div>
+
+            <div id ="menu">
+               <ul>
+                  <li> <a href = "#">Cadastro</a></li>
+                  <li> <a href = "#">Pesquisa</a></li>
+		          <li> <div id = "rank"/></li>
+               </ul>
+            </div><br/>
+   
+            <div id = "painel">
+            </div>
+
+            <div id = opcao>
+               <select id = "selJogo" onchange = "toogle_divJog2()">
+                  <option >01 Jogador contra a máquina</option>
+		            <option> 02 Jogadores - 01 contra o outro</option>
+		         </select>
+            </div><br/><br/>
+
+            <div id = "jog1">
+                Jogador "X":<input type = "text" id = "nomeJog1">
+                Pontos:<input type = "text" id = "pt1" class = "pt" value = 0 disabled>
+            </div><br/>
+
+            <!--<div id = "jog2" style = "visibility: hidden;">-->
+            <div id = "jog2">
+                Jogador "0":<input type = "text" id = "nomeJog2">
+                Pontos:<input type = "text" id = "pt2" class = "pt" value = 0 disabled>
+            </div>
+
+          
+            <div id = "iniciar">
+               <input type ="button" id = "btnIniciar" class="w3-button w3-theme-d1 w3-margin" value ="Iniciar Jogo" onclick ="escolherJogada()"><i class="fa fa-calculator w3-padding-small"></i></button>
+               
+           </div><br/>
+
+   
+            <div id = "result"></div>
+            <div id = "teste"></div>
+
+            <blink>
+              <div id="content">
+                 <script src="jogodavelha.js"></script>
+                 
+                 <script>
+                   inicializar()
+                 </script>
+                 
+               </div>
+            </blink><br/><br/>
+
+             <div id = "jogador_da_vez"></div><br><br/>
+
+        </div>
+
+          <footer>
+             <p>© 2020 - Jogo da Velha</p>
+          </footer>
+
+    </body>
+
+</html>
+
+
